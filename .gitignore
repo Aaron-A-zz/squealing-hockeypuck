@@ -1,16 +1,12 @@
 let firstArray = ["Hello", "Good morning", "Good afternoon"]
-
 let secondArray = ["Aaron", "John", "Mike"]
-
 let thirdArray = ["Nice to see you", "How have you been", "How was your weekend"]
 
 
 func buildASentence(firstArray: Array<String>, secondArray: Array<String>, thirdArray: Array<String>) ->  String {
-   
     //One
     let randomNumber = arc4random_uniform(UInt32(firstArray.count))
     let randomWord = Int(randomNumber)
-
 
     //Two
     let secondRandomNumber = arc4random_uniform(UInt32(secondArray.count))
@@ -19,11 +15,9 @@ func buildASentence(firstArray: Array<String>, secondArray: Array<String>, third
     //Three
     let thridRandomNumber = arc4random_uniform(UInt32(thirdArray.count))
     let thirdRandomWord = Int(thridRandomNumber)
-  
-
+ 
     return "\(firstArray[randomWord]) \(secondArray[secondRandomWord]), \(thirdArray[thirdRandomWord])"
 
 }
-
 
 print(buildASentence(firstArray,secondArray: secondArray,thirdArray: thirdArray))
