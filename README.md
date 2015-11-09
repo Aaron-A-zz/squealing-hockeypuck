@@ -1,5 +1,5 @@
 # squealing-hockeypuck
-Check out the code on gitignor
+Check out the code on gitignore
 
 email me if you have questions :) 
 
